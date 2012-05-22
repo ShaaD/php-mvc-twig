@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	{% block head %}
+		<title>MVC | {% block title %}Home{% endblock %}</title>
+		<link rel="stylesheet" href="http://mvc.dev/public/css/default.css">
+	{% endblock %}
+</head>
+<body>
+	<!-- header -->
+	<header>
+		{% block header %}
+		    <h1>The Header</h1>
+		{% endblock %}
+	</header><!-- /header -->
+	
+	<!-- navigation -->
+	<nav>
+		{% block nav %}
+		    <ul id="nav" class="nav">
+		    	<li><a href="http://mvc.dev/index" title="Home">Home</a></li>
+		    	<li><a href="http://mvc.dev/about" title="About">About</a></li>
+		    	<li><a href="http://mvc.dev/help" title="Help">Help</a></li>
+		    	<li><a href="http://mvc.dev/login" title="Log In">Log In</a></li>
+		    </ul><!-- /ul#nav -->
+		{% endblock %}
+	</nav><!-- /navigation -->
+	
+	<!-- main content -->
+	<div id="main" class="clear">
+		{% block main %}
+		    
+		{% endblock %}
+	</div><!-- /main content -->
+	
+	<!-- footer -->
+	<footer>
+		{% block footer %}
+			<p>(C) footer inc.</p>
+		{% endblock %}	
+	</footer><!-- /footer -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://mvc.dev/public/js/custom.js"></script>
+</body>
+</html>

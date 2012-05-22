@@ -1,0 +1,14 @@
+This is just a simple PHP MVC framwork which I'm working on for learning purposes.
+
+I'm trying to include Twig as the template engine and I'm having lots of difficulties finding out
+how to pass results from methods as variables into the template engine and display it in the body of the html
+document.
+
+If anyone is interested in helping out I would be for ever greatful.
+Thanks a thousand times for everything the open source community has already tought me.
+
+If you f.ex. look into the models/help_model.php file there is a method called add(). It simply just returns 10 + 10.
+In the help controller (controllers/help.php) there is a method called "other" which does: $this->view->add = $this->model->add();
+Since the Base Controller instantiates the View class in the View Controller and the Help Controller extends the Base Controller I
+do $this->view->add, and have declared a public $add at the top of the class.
+Then I return $this->view->add in hope for being able to pass it as a variable into the body of the html document located under views/help/help.twig.
