@@ -3,8 +3,7 @@ define('BASE_PATH', dirname(realpath(__FILE__)) . '/');
 define('VIEW_PATH', BASE_PATH . 'views/');
 
 // Twig
-require_once BASE_PATH.'vendors/twig/lib/Twig/Autoloader.php';
-Twig_Autoloader::register();
+require_once BASE_PATH.'vendor/autoload.php';
 
 $loader = new Twig_Loader_Filesystem(VIEW_PATH);
 $twig = new Twig_Environment($loader, array(

@@ -1,3 +1,6 @@
+
+# About
+
 This is just a simple PHP MVC framwork which I'm working on for learning purposes.
 
 I'm trying to include Twig as the template engine and I'm having lots of difficulties finding out
@@ -12,3 +15,9 @@ In the help controller (controllers/help.php) there is a method called "other" w
 Since the Base Controller instantiates the View class in the View Controller and the Help Controller extends the Base Controller I
 do $this->view->add, and have declared a public $add at the top of the class.
 Then I return $this->view->add in hope for being able to pass it as a variable into the body of the html document located under views/help/help.twig.
+
+# Instructions
+
+git clone https://github.com/beinoriusju/php-mvc-twig mvc
+cd mvc/
+composer install
